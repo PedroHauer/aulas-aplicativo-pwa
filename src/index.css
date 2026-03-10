@@ -7,13 +7,15 @@
 html,
 body {
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: var(--cor-fundo-padrao);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--cor-texto-padrao)
 }
 
-#root{
-height: 100%;
-display: grid;
-grid-template-rows: 48px 1fr 64px;
+#root {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 48px 1fr 64px;
 }
 
 :root {
