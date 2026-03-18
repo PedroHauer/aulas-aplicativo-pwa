@@ -1,18 +1,18 @@
 import "./BotaoCustomizado.css";
 
-function BotaoCustomizado({tipo, children}) {
-const classes = ["botao-customizado__root"]
+function BotaoCustomizado({ tipo, children }) {
+  let classes = "botao-customizado__root";
 
-switch (tipo) {
+  switch (tipo) {
     case "primario":
-    classes.push("botao-customizado--primario");
-    break;
+      classes += " botao-customizado__primario";
+      break;
     case "secundario":
-    classes.push("botao-customizado--secundario");
-    break;
-}
+      classes += " botao-customizado__secundario";
+      break;
+  }
 
-    return <button className="botao-customizado__root">{children}</button>;
+  return <button className={classes}>{children}</button>;
 }
 
 export default BotaoCustomizado;
