@@ -3,11 +3,16 @@ import Cabecalho from './componentes/Cabecalho/Cabecalho';
 import Rodape from './componentes/Rodape/Rodape';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import PaginaInicial from './paginas/PaginaInicial/PaginaInicial';
+import ListaProdutos from './paginas/ListaProdutos/ListaProdutos';
 
 const roteador = createBrowserRouter([
  {
    path: '',
    element: <PaginaInicial />,
+ },
+ {
+   path: 'lista-produtos',
+   element: <ListaProdutos />,
  },
  {
     path: "*",
