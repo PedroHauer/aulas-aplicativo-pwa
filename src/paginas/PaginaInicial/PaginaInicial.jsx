@@ -12,6 +12,10 @@ const navigate = useNavigate();
       Lista de Produtos
       </BotaoCustomizado>
 
+          <BotaoCustomizado tipo="primario" aoClicar={() => navigate('/lista-tarefas')}>
+      Lista de Tarefas
+      </BotaoCustomizado>
+
     <BotaoCustomizado tipo="secundario" aoClicar={() => navigate('/rota-invalida')}>
       Rota Inválida
       </BotaoCustomizado>

@@ -4,6 +4,7 @@ import Rodape from './componentes/Rodape/Rodape';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import PaginaInicial from './paginas/PaginaInicial/PaginaInicial';
 import ListaProdutos from './paginas/ListaProdutos/ListaProdutos';
+import ListaTarefas from './paginas/ListaTarefas/ListaTarefas';
 
 const roteador = createBrowserRouter([
  {
@@ -13,6 +14,10 @@ const roteador = createBrowserRouter([
  {
    path: 'lista-produtos',
    element: <ListaProdutos />,
+ },
+  {
+   path: 'lista-tarefas',
+   element: <ListaTarefas />,
  },
  {
     path: "*",
