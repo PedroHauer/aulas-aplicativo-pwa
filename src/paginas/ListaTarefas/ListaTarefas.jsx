@@ -31,8 +31,8 @@ function ListaTarefas({}) {
   };
 
   return (
-    <Principal>
-      <h2>Lista de Tarefas ({tarefas.length})</h2>
+   <Principal voltarPara="/" titulo={`Lista de Tarefas (${tarefas.length})`}>
+      {/* <h2>Lista de Tarefas ({tarefas.length})</h2> */}
 
       <div className="lista-tarefas__campo-adicionar">
         <CampoCustomizado
